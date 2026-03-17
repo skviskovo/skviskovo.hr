@@ -42,3 +42,46 @@ body {
         min-height: 50vh;
     }
 }
+
+/* Ograničavamo visinu slika da ne zauzmu cijeli ekran */
+.carousel-img {
+    height: 450px; 
+    object-fit: cover; /* Ovo sprečava razvlačenje slike */
+}
+
+/* Prilagodba za mobitele */
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 250px;
+    }
+}
+
+/* Galerija za desktop (računala) */
+.carousel-img {
+    height: 350px; /* Smanjeno sa 450px na 350px */
+    object-fit: cover; 
+    width: 100%;
+}
+
+/* Galerija za mobitele - još niža visina */
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 200px; /* Smanjeno na 200px za mobitele */
+    }
+}
+
+/* Opcionalno: Ako želiš da cijeli kontejner bude uži (manji centrirani box) */
+#klubCarousel {
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.hero-small {
+    min-height: 150px !important;
+    height: 150px !important;
+}
+
+.hero-small {
+    background-size: cover;
+    background-position: center;
+}
