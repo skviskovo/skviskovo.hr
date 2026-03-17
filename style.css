@@ -1,0 +1,44 @@
+/* Opće postavke */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Hero sekcija - dodaj sliku šahovnice u background-image ako želiš */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}
+
+/* Navbar prilagodbe */
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+/* Stilovi za ikone u karticama */
+.icon-box {
+    font-size: 2.5rem;
+    color: #ffc107;
+}
+
+/* Kartice */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Prilagodbe za mobilne uređaje */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section {
+        min-height: 50vh;
+    }
+}
