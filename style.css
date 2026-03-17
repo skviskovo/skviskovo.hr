@@ -1,44 +1,86 @@
-/* Opće postavke */
+/* Osnovne postavke */
 body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    color: #3c4043; /* Standardna Google boja teksta */
+    background-color: #ffffff;
+    line-height: 1.6;
 }
 
-/* Hero sekcija - dodaj sliku šahovnice u background-image ako želiš */
-.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=1200');
+/* Navigacija */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: #3c4043 !important;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: #5f6368 !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.nav-link.active {
+    color: #1a73e8 !important; /* Google plava */
+}
+
+/* Banner - Google Sites Image Header */
+.site-banner {
+    position: relative;
+    height: 350px;
+    background-image: url('https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&q=80&w=1400'); /* Zamijeni sa slikom kluba */
     background-size: cover;
     background-position: center;
-    min-height: 70vh;
 }
 
-/* Navbar prilagodbe */
-.navbar-brand {
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Tamni prozirni sloj */
+}
+
+.banner-content h1 {
+    font-weight: 400;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Stilovi za ikone u karticama */
-.icon-box {
-    font-size: 2.5rem;
-    color: #ffc107;
+/* Naslovi sekcija */
+.section-title {
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #202124;
+    border-bottom: 2px solid #1a73e8;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-/* Kartice */
+/* Kartice i blokovi */
+.content-block {
+    font-size: 1.1rem;
+}
+
 .card {
-    transition: transform 0.3s ease;
+    transition: box-shadow 0.2s;
+    border-radius: 8px;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Prilagodbe za mobilne uređaje */
+/* Responzivnost */
 @media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.5rem;
+    .site-banner {
+        height: 250px;
     }
-    .hero-section {
-        min-height: 50vh;
+    .banner-content h1 {
+        font-size: 2rem;
     }
 }
