@@ -7,7 +7,7 @@ body {
 /* Hero sekcija */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=1200'); 
+                url('images/hero_banner_chess.webp'); 
     background-size: cover;
     background-position: center;
     min-height: 70vh;
