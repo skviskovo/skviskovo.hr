@@ -43,7 +43,7 @@ body {
     }
 }
 
-/* Ograničavamo visinu slika da ne zauzmu cijeli ekran */
+/* Ograničenje visine slika da ne zauzmu cijeli ekran */
 .carousel-img {
     height: 450px; 
     object-fit: cover; /* Ovo sprečava razvlačenje slike */
@@ -70,7 +70,7 @@ body {
     }
 }
 
-/* Opcionalno: Ako želiš da cijeli kontejner bude uži (manji centrirani box) */
+/* Opciono: manji centrirani box */
 #klubCarousel {
     max-width: 900px; 
     margin: 0 auto; 
