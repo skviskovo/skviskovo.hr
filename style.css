@@ -58,7 +58,7 @@ body {
 
 /* Galerija za desktop (računala) */
 .carousel-img {
-    height: 350px; /* Smanjeno sa 450px na 350px */
+    height: 500px;
     object-fit: cover; 
     width: 100%;
 }
@@ -66,7 +66,7 @@ body {
 /* Galerija za mobitele - još niža visina */
 @media (max-width: 768px) {
     .carousel-img {
-        height: 200px; /* Smanjeno na 200px za mobitele */
+        height: 300px;
     }
 }
 
