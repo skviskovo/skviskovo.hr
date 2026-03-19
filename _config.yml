@@ -1,0 +1,14 @@
+# Basic Site Info
+title: "ŠK Viškovo"
+description: "20 godina šaha i rada s mladima"
+email: "info@skviskovo.hr"
+
+# Build Settings
+baseurl: "" # Empty for localhost:4000
+url: "http://localhost:4000"
+
+# Plugins (Must be supported by GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
