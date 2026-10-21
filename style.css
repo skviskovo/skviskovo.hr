@@ -7,7 +7,7 @@ body {
 /* Hero sekcija */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('images/hero_banner_chess.webp'); 
+                url('/images/hero_banner_chess.webp'); 
     background-size: cover;
     background-position: center;
     min-height: 70vh;

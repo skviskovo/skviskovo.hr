@@ -1,0 +1,49 @@
+---
+layout: default
+title: Vijesti
+---
+
+<header class="hero-section hero-small text-white d-flex align-items-center">
+  <div class="container text-center">
+    <h2 class="display-3 fw-bold mb-3">Vijesti</h2>
+  </div>
+</header>
+
+<section id="vijesti" class="py-5">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-lg-8 mx-auto mb-4 mb-lg-0">
+        
+        <!-- Konkretni uvodni tekst za sekciju Vijesti -->
+        <div class="mb-4">
+          <p>Pregledajte najnovije objave, izvještaje s odigranih turnira i službene obavijesti Šahovskog kluba Viškovo. Informirajte se o nastupima naših natjecatelja na županijskim i međunarodnim prvenstvima, kao i o svim organizacijskim aktivnostima Kluba.</p>
+          <p class="text-muted small">Klikom na pojedinu vijest možete pročitati cijeli članak i pogledati fotografije s događaja.</p>
+        </div>
+
+        <hr class="mb-4">
+
+        <!-- Popis vijesti -->
+        <article class="p-3 border rounded shadow-sm bg-light mb-3">
+          <h5 class="mb-0">
+            <a href="{{ '/vijesti/jesenski-open-sk-viskovo.html' | relative_url }}" class="text-decoration-none text-dark d-flex align-items-center gap-2 link-vijest">
+              <i class="bi bi-arrow-right text-dark"></i>
+              <span class="fw-semibold fs-6 text-dark">Darko Dorić pobjednik Jesenskog Opena ŠK Viškovo</span>
+            </a>
+          </h5>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hover CSS efekt -->
+<style>
+  .link-vijest:hover span {
+    text-decoration: underline;
+  }
+  .link-vijest:hover i {
+    transform: translateX(4px);
+    transition: transform 0.2s ease-in-out;
+  }
+</style>
