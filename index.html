@@ -3,16 +3,16 @@ layout: default
 title: Početna
 ---
 
-    <header class="hero-section text-white d-flex align-items-center">
-      <div class="container text-center">
-        <h1 class="display-3 fw-bold mb-3">Šahovski klub Viškovo</h1>
-        <p class="lead mb-4">Promičemo šahovsku kulturu i razvijamo mlade talente od 2006. godine.</p>
-        <a href="o-nama.html" class="btn btn-warning btn-lg px-4 me-sm-3 fw-bold" aria-label="Learn More About Us">Saznaj više</a>
-        <a href="clanstvo.html" class="btn btn-outline-light btn-lg px-4" aria-label="Become a Member">Postani član</a>
-      </div>
-    </header>
+<header class="hero-section text-white d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="display-3 fw-bold mb-3">Šahovski klub Viškovo</h1>
+    <p class="lead mb-4">Promičemo šahovsku kulturu i razvijamo mlade talente od 2006. godine.</p>
+    <a href="{{ '/o-nama.html' | relative_url }}" class="btn btn-warning btn-lg px-4 me-sm-3 fw-bold" aria-label="Learn More About Us">Saznaj više</a>
+    <a href="{{ '/clanstvo.html' | relative_url }}" class="btn btn-outline-light btn-lg px-4" aria-label="Become a Member">Postani član</a>
+  </div>
+</header>
 
-    <section id="o-nama" class="py-5">
+<section id="o-nama" class="py-5">
   <div class="container">
     <div class="row align-items-start">
       
@@ -33,39 +33,73 @@ title: Početna
       </div>
 
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <img src="images/20_godina_ilustracija.webp" alt="20 godina šaha i rada s mladima" class="img-fluid">
-    </div>
+        <img src="{{ '/images/20_godina_ilustracija.webp' | relative_url }}" alt="20 godina šaha i rada s mladima" class="img-fluid">
+      </div>
 
     </div>
   </div>
 </section>
 
-    <section id="aktivnosti" class="py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-5">Što radimo</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-4">
-              <i class="bi bi-people icon-box mb-3"></i>
-              <h5 class="fw-bold">Kadeti</h5>
-              <p class="text-muted">Poseban fokus stavljamo na rad s najmlađima i razvoj šahovskih vještina od rane dobi.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-4">
-              <i class="bi bi-calendar-event icon-box mb-3"></i>
-              <h5 class="fw-bold">Turniri</h5>
-              <p class="text-muted">Redovito organiziramo i sudjelujemo na šahovskim susretima diljem županije.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-4">
-              <i class="bi bi-lightbulb icon-box mb-3"></i>
-              <h5 class="fw-bold">Strategija</h5>
-              <p class="text-muted">Kroz igru učimo kritičko razmišljanje, strpljenje i sportsku etiku.</p>
-            </div>
-          </div>
+<!-- Sekcija Posljednje vijesti -->
+<section id="posljednje-vijesti" class="py-5 bg-white border-top border-bottom">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold mb-0">Posljednje vijesti</h2>
+      <a href="{{ '/vijesti/' | relative_url }}" class="btn btn-outline-dark btn-sm">Sve vijesti &rarr;</a>
+    </div>
+
+    <div class="card border-0 shadow-sm bg-light">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-2">
+          <a href="{{ '/vijesti/jesenski-open-sk-viskovo.html' | relative_url }}" class="text-decoration-none text-dark link-vijest d-flex align-items-center gap-2">
+            <i class="bi bi-arrow-right text-dark"></i>
+            <span>Darko Dorić pobjednik Jesenskog Opena ŠK Viškovo</span>
+          </a>
+        </h4>
+        <p class="card-text text-muted mt-2 mb-0">
+          Međunarodni šahovski majstor Darko Dorić pobjednik je međunarodnog Jesenskog Opena Šahovskog kluba Viškovo održanog proteklog vikenda...
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aktivnosti" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Što radimo</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <i class="bi bi-people icon-box mb-3"></i>
+          <h5 class="fw-bold">Kadeti</h5>
+          <p class="text-muted">Poseban fokus stavljamo na rad s najmlađima i razvoj šahovskih vještina od rane dobi.</p>
         </div>
       </div>
-    </section>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <i class="bi bi-calendar-event icon-box mb-3"></i>
+          <h5 class="fw-bold">Turniri</h5>
+          <p class="text-muted">Redovito organiziramo i sudjelujemo na šahovskim susretima diljem županije.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <i class="bi bi-lightbulb icon-box mb-3"></i>
+          <h5 class="fw-bold">Strategija</h5>
+          <p class="text-muted">Kroz igru učimo kritičko razmišljanje, strpljenje i sportsku etiku.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- Hover CSS efekt za poveznicu vijesti -->
+<style>
+  .link-vijest:hover span {
+    text-decoration: underline;
+  }
+  .link-vijest:hover i {
+    transform: translateX(4px);
+    transition: transform 0.2s ease-in-out;
+  }
+</style>
